@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+nav{
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+}
+nav ul{
+    list-style-type: none;
+}
+nav li{
+    display: inline-block;
+}
+nav a{
+    text-decoration: none;
+    font-size: 1.5em;
+    border-bottom: 1px ;
+    color: white;
+    font-family: "Manufacturing Consent";
+    padding: 5px;
+    margin: 10px;
+}
+nav a:hover{
+    color: red;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    color: rgb(217, 217, 217);
+    margin: auto;
+    width: 850px;
+    max-width: 95%;
+    line-height: 1.6;
+    font-size: 18px;
+    padding: auto;
+}
+header{
+    align-self: auto;
+    /*background-image: url(/drawings/skill-and-work/pfp.jpeg);*/
+}
+h1{
+    font-size: 50px;
+    font-family: "Manufacturing Consent";
+    padding: auto;
+    margin: auto;
+}
+h2{
+    font-size: 35px;
+    font-family: "Manufacturing Consent";
+    padding: auto;
+    margin: auto;
+}
+button{
+    width: 150px;
+    height: 40px;
+}
+
+
+.description{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.social-media{
+    width: 100px;
+    padding: auto;
+    margin: auto;
+}
+.showScreenshots{
+    width: auto;
+    height: 100%;
+    float: right;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.main-box{
+    /*border: 1px solid rgb(0, 38, 255);*/
+    padding-top: 10px;
+    width: 850px;
+    height: 500px;
+    max-width: 100%;
+    clear: both;
+    display: flex;
+}
+.text-box{
+    /*border: 1px solid red;*/
+    padding-right: 20px;
+    width: 300px;
+    height: 500px;
+    float: none;
+    clear: both;
+    overflow: auto;
+}
+.image-box{
+    /*border: 1px solid yellow;*/
+    width: 550px;
+    height: 500px;
+    float: right;
+    clear: both;
+    overflow: auto;
+    display: flex;
+}
+
+
+#profile-photo{
+    max-width: 100%;
+    padding: auto;
+    margin: auto;
+}
