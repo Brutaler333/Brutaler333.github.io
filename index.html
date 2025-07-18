@@ -6,12 +6,17 @@
     <title>Hell Yea!!</title>
     <link href="style.css" rel="stylesheet"/>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&display=swap');
+        /*@import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&display=swap');*/
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
     </style>
 </head>
+
 <body>
+
+    <!--HEADER-->
+
     <header>
-        <nav    >
+        <nav><!--navbar-->
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Projects</a></li>
@@ -19,21 +24,26 @@
                 <li><a href="#">Contact Me</a></li>
             </ul>
         </nav>
-        <div>
+        <div class="profile-section"><!--PERFIL-->
             <h1 id="owner-name" class="text-center">Juan Diego Pedraza Campos</h1>
-            <h2 class="text-center">"Brutaler"</h2>
-            <img id="profile-photo" src="/drawings/skill-and-work/pfp.jpeg" alt="profile-photo" align="center">
-
+            <h1 class="text-center">"Brutaler"</h1>
+            <div class="profileBackground">
+                <img id="profile-photo" src="/drawings/skill-and-work/pfp.jpeg" alt="profile-photo" align="center">
+            </div>
+            <!--LOGOS-->
             <div class="social-media-logos" align="center">
                 <image class="social-media" src="/drawings/steamLogoDraw.jpeg" alt="steam-link"></image>
                 <image class="social-media" src="/drawings/youTubeLogoDraw.jpeg" alt="youtube-link"></image>
                 <image class="social-media" src="/drawings/gitHubLogoDraw.jpeg" alt="gitHub-link"></image>
                 <image class="social-media" src="/drawings/linkedInLogoDraw.jpeg" alt="linkedIn-link"></image>
             </div>
+
+            <p id="description">Welcome to my first webpage done with basic JS, HTML and CSS. I'm Juan, a passionate Systems and computing engineer, fighter and game dev. I love hanging out with my friends and spending time on VR.</p>
+
         </div>
     </header>
-    
-    <p class="description">Welcome to my first webpage done with basic JS, HTML and CSS. I'm Juan, a passionate Systems and computing engineer, fighter and game dev. I love hanging out with my friends and spending time on VR.</p>
+
+    <!--Section for Projects-->
 
     <section class="project-review">
         <div>
@@ -45,9 +55,8 @@
                     <button id="ra">Rescate Animal</button>
                 </span>                
                 <div>
-                    <div class="main-box">
-                        <div class="text-box">
-                            <p id="ssInfo" class="text-left">-- The Super Simulator (its real name is way different but its too long) is a VR game I'm working on my own, its a physics based VR experience/sandbox where I'm exploring Unity's VR capabilities and features while developing my own skills on VR development.
+                    <div class="text-box">
+                            <p id="ssInfo">-- The Super Simulator (its real name is way different but its too long) is a VR game I'm working on my own, its a physics based VR experience/sandbox where I'm exploring Unity's VR capabilities and features while developing my own skills on VR development.
                             
                             It features a 3 storie ARMORY full of different kinds of weapons and gadgets. It has another Escene where you are supposed to spawn all kinds of enemy types to fight with and many obstacles and interesting stuff to play and engage with.</p>
                         </div>
@@ -87,7 +96,7 @@
                             <img class="showScreenshots" src="/drawings/rescateAnimal/ra01tabletconcept.jpeg" alt="tablet/concept">
                             <img class="showScreenshots" src="/drawings/rescateAnimal/ra06map01concept.jpeg" alt="map01-concept">
                         </div>-->
-                    </div>
+                    
                 </div>
             </div>
         </div>

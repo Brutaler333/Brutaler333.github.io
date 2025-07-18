@@ -7,6 +7,7 @@ nav{
     display: inline-block;
     width: 100%;
     text-align: right;
+    background-color: rgb(13, 13, 13);
 }
 nav ul{
     list-style-type: none;
@@ -17,9 +18,9 @@ nav li{
 nav a{
     text-decoration: none;
     font-size: 1.5em;
-    border-bottom: 1px ;
-    color: white;
-    font-family: "Manufacturing Consent";
+    border-bottom: 1px;
+    color: rgb(217, 217, 217);
+    font-family: "Crimson Text";
     padding: 5px;
     margin: 10px;
 }
@@ -27,82 +28,78 @@ nav a:hover{
     color: red;
 }
 body{
-    background-color: rgb(0, 0, 0);
+    background-color:rgb(15, 15, 15);
     color: rgb(217, 217, 217);
     margin: auto;
+    padding: auto;
     width: 850px;
-    max-width: 95%;
+    max-width: 100%;
     line-height: 1.6;
     font-size: 18px;
-    padding: auto;
 }
 header{
+    padding: 10px;
+    margin: 20px;
     align-self: auto;
-    /*background-image: url(/drawings/skill-and-work/pfp.jpeg);*/
 }
 h1{
     font-size: 50px;
-    font-family: "Manufacturing Consent";
-    padding: auto;
-    margin: auto;
+    font-family: "Crimson Text";
+    padding: 05px;
+    margin: 10px;
 }
 h2{
     font-size: 35px;
-    font-family: "Manufacturing Consent";
-    padding: auto;
-    margin: auto;
+    font-family: "Crimson Text";
+    padding: 05px;
+    margin: 10px;
+}
+p{
+    font-size: 20px;
 }
 button{
     width: 150px;
     height: 40px;
 }
 
-
-.description{
-    font-size: 20px;
-    margin-top: 5px;
-    margin-bottom: 20px;
+.profile-section{
+    background-color:rgb(13, 13, 13);
 }
 .social-media{
-    width: 100px;
+    width: 75px;
     padding: auto;
     margin: auto;
+}
+.project-review{
+    background-color:rgb(13, 13, 13);
+    padding: 10px;
+    margin: 20px;
 }
 .showScreenshots{
     width: auto;
     height: 100%;
     float: right;
 }
-.text-left{
-    text-align: left;
-}
 .text-center{
     text-align: center;
 }
-.main-box{
-    /*border: 1px solid rgb(0, 38, 255);*/
-    padding-top: 10px;
-    width: 850px;
-    height: 500px;
-    max-width: 100%;
-    clear: both;
-    display: flex;
-}
 .text-box{
     /*border: 1px solid red;*/
-    padding-right: 20px;
-    width: 300px;
-    height: 500px;
-    float: none;
-    clear: both;
+    padding: 5px;
+    margin: 10px;
+    max-width: 100%;
+    width: 850px;
+    height: 250px;
     overflow: auto;
 }
 .image-box{
     /*border: 1px solid yellow;*/
-    width: 550px;
+    padding: 5px;
+    margin: 10px;
+    width: 850px;
     height: 500px;
-    float: right;
-    clear: both;
+    max-width: 100%;
+    max-height: 100%;
     overflow: auto;
     display: flex;
 }
@@ -112,4 +109,8 @@ button{
     max-width: 100%;
     padding: auto;
     margin: auto;
+}
+#description{
+    padding: 5px;
+    margin: 10px;
 }
