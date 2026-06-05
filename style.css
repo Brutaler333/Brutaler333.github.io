@@ -1,4 +1,120 @@
-html{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+nav{
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    background-color: rgb(13, 13, 13);
+}
+nav ul{
+    list-style-type: none;
+}
+nav li{
+    display: inline-block;
+}
+nav a{
+    text-decoration: none;
+    font-size: 1.1em;
+    border-bottom: 1px;
+    color: rgb(217, 217, 217);
+    font-family: "Crimson Text";
+    padding: 5px;
+    margin: 10px;
+}
+nav a:hover{
+    color: red;
+    font-size: 1.2em;
+}
+body{
+    background-color:rgb(15, 15, 15);
+    color: rgb(217, 217, 217);
+    margin: auto;
+    padding: auto;
+    width: 850px;
+    max-width: 100%;
+    line-height: 1.6;
+    font-size: 20px;
+}
+header{
+    padding: 10px;
+    margin: 20px;
+    align-self: auto;
+}
+h1{
+    font-size: 35px;
+    font-family: "Crimson Text";
+    padding: 05px;
+    margin: 10px;
+}
+h2{
+    font-size: 25px;
+    font-family: "Crimson Text";
+    padding: 05px;
+    margin: 10px;
+}
+p{
+    font-size: 20px;
+}
+button{
+    width: 150px;
+    height: 40px;
+}
+
+.profile-section{
+    background-color:rgb(13, 13, 13);
+}
+.social-media{
+    width: 75px;
+    padding: auto;
+    margin: auto;
+}
+.project-review{
+    background-color:rgb(13, 13, 13);
+    padding: 10px;
+    margin: 20px;
+}
+.showScreenshots{
+    width: auto;
+    height: 100%;
+    float: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-box{
+    /*border: 1px solid red;*/
+    padding: 5px;
+    margin: 10px;
+    max-width: 100%;
+    width: 850px;
+    height: 250px;
+    overflow: auto;
+}
+.image-box{
+    /*border: 1px solid yellow;*/
+    padding: 5px;
+    margin: 10px;
+    width: 850px;
+    height: 500px;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    display: flex;
+}
+
+
+#profile-photo{
+    max-width: 100%;
+    padding: auto;
+    margin: auto;
+}
+#description{
+    padding: 5px;
+    margin: 10px;
+}html{
     scroll-behavior: smooth;
 }
 
