@@ -41,3 +41,12 @@ ssButton.addEventListener("click", function(){
 modButton.addEventListener("click", function(){
     showProject(modProject);
 });
+
+//function to open accordions xd
+function toggleAccordion(header) {
+    const body = header.nextElementSibling;
+    const icon = header.querySelector(".toggle-icon");
+    
+    body.classList.toggle("show");
+    icon.textContent = body.classList.contains("show") ? "−" : "+";
+}

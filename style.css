@@ -161,3 +161,87 @@ button.active{
     color: rgb(180, 180, 180);
     font-size: 16px;
 }
+
+/*experience*/
+.experience-panel {
+    background-color: rgb(20, 20, 20);
+    border: 2px solid rgb(50, 50, 50);
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.experience-panel h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.accordion-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.accordion-item {
+    background-color: rgb(15, 15, 15);
+    border: 1px solid rgb(40, 40, 40);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    padding: 15px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: rgb(25, 25, 25);
+}
+
+.accordion-header p {
+    margin: 5px 0;
+}
+
+.accordion-header p:first-child {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.date {
+    color: rgb(150, 150, 150);
+    font-size: 13px;
+}
+
+.toggle-icon {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    transition: transform 0.3s ease;
+    min-width: 25px;
+    text-align: center;
+}
+
+.accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 20px;
+    background-color: rgb(10, 10, 10);
+}
+
+.accordion-body.show {
+    max-height: 400px;
+    padding: 15px 20px;
+}
+
+.accordion-body p {
+    line-height: 1.6;
+    color: rgb(200, 200, 200);
+    margin: 0;
+}
