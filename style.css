@@ -20,12 +20,12 @@ nav li{
 }
 nav a{
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1em;
     border-bottom: 1px ;
     color: white;
-    font-family: "Manufacturing Consent";
+    /*font-family: "Manufacturing Consent";*/
     padding: 5px;
-    margin: 10px;
+    margin: 5px;
 }
 nav a:hover{
     color: red;
@@ -37,7 +37,7 @@ body{
     width: 850px;
     max-width: 95%;
     line-height: 1.6;
-    font-size: 18px;
+    font-size: 15px;
     padding: auto;
 }
 header{
@@ -45,13 +45,13 @@ header{
     /*background-image: url(/drawings/skill-and-work/pfp.jpeg);*/
 }
 h1{
-    font-size: 50px;
+    font-size: 40px;
     font-family: "Manufacturing Consent";
     padding: auto;
     margin: auto;
 }
 h2{
-    font-size: 35px;
+    font-size: 25px;
     font-family: "Manufacturing Consent";
     padding: auto;
     margin: auto;
@@ -178,16 +178,18 @@ button.active{
 }
 
 .accordion-items {
+    max-height: 600px;
     display: flex;
     flex-direction: column;
     gap: 12px;
+    overflow-y: auto;
 }
 
 .accordion-item {
     background-color: rgb(15, 15, 15);
     border: 1px solid rgb(40, 40, 40);
     border-radius: 8px;
-    overflow: hidden;
+    
 }
 
 .accordion-header {
@@ -233,10 +235,11 @@ button.active{
     transition: max-height 0.3s ease;
     padding: 0 20px;
     background-color: rgb(10, 10, 10);
+    overflow-y: auto;
 }
 
 .accordion-body.show {
-    max-height: 400px;
+    max-height: 600px;
     padding: 15px 20px;
 }
 
