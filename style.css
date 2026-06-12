@@ -121,12 +121,6 @@ button.active{
     margin: auto;
 }
 
-.project{
-    display: none;
-}
-.project.active{
-    display: block;
-}
 
 .experience-content {
     line-height: 1.8;
@@ -243,8 +237,152 @@ button.active{
     padding: 15px 20px;
 }
 
-.accordion-body p {
+.accordion-body p{
     line-height: 1.6;
     color: rgb(200, 200, 200);
     margin: 0;
+}
+
+
+/* THIS IS FOR THE NEW SECTIONS, I NEED TO STUDY EVERYTHING IT DOES BECAUSE I'M PASTING IT FROM CLAUDE*/
+/* MAIN TOGGLE BUTTONS */
+.main-toggle-buttons {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.main-btn {
+    width: 120px;
+    height: 50px;
+    padding: 0;
+    font-size: 14px;
+    border: 2px solid rgb(100, 100, 100);
+    background-color: rgb(20, 20, 20);
+    color: rgb(217, 217, 217);
+    border-radius:0px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-btn:hover {
+    border-color: red;
+    color: red;
+}
+
+.main-btn.active {
+    background-color: red;
+    color: white;
+    border-color: red;
+}
+
+/* MAIN SECTIONS */
+.main-section {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.main-section.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* PROJECT TOGGLE BUTTONS */
+.project-toggle-buttons {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.project-btn {
+    width: 120px;
+    height: 40px;
+    padding: 0px;
+    font-size: 12px;
+    border: 1px solid rgb(80, 80, 80);
+    background-color: rgb(25, 25, 25);
+    color: rgb(200, 200, 200);
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.project-btn:hover {
+    border-color: red;
+    color: red;
+}
+
+.project-btn.active {
+    background-color: red;
+    color: white;
+    border-color: red;
+}
+
+/* GALLERY CONTAINER */
+.gallery-container {
+    border: none;
+    padding: 0;
+    margin: 20px 0;
+    background-color: transparent;
+}
+
+/* HORIZONTAL SCROLLABLE GALLERY */
+.horizontal-gallery {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+}
+
+.horizontal-gallery::-webkit-scrollbar {
+    height: 8px;
+}
+
+.horizontal-gallery::-webkit-scrollbar-track {
+    background: rgb(30, 30, 30);
+    border-radius: 10px;
+}
+
+.horizontal-gallery::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+}
+
+.horizontal-gallery::-webkit-scrollbar-thumb:hover {
+    background: rgb(200, 50, 50);
+}
+
+/* GALLERY ITEMS */
+.gallery-item {
+    flex-shrink: 0;
+    min-width: 300px;
+    height: 250px;
+    border-radius: 0;
+    overflow: auto;
+    background-color: transparent;
+    border: none;
+}
+
+.gallery-item img,
+.gallery-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-item:hover {
+    border: none;
+    box-shadow: none;
 }

@@ -45,76 +45,134 @@
 
     <section id="projects" class="project-review">
         <div>
-            <h2 align="left">Projects I'm currently working on:</h2>
-            <div>
-                <span>
-                    <button id="ra">Rescate Animal</button>
-                    <button id="ss">Super Simulador!!!</button>
-                    <button id="mod">3D Moddeling</button>
-                </span>
-                <div>                       
-                    <div id="rescateanimal" class="project">
-                        <div class="main-box">
-                            <div class="text-box">
-                            <p id="raInfo" class="text-left">-- Rescate Animal is a VR game born as my Thesis and the project I graduated with from University. It's about rescuing animals and learning about them and is currently being re worcked to include many new features and new concepts for story and gameplay.</p>
-                        </div>
-                        <div class="image-box">
-                            <img class="showScreenshots" src="/drawings/rescateAnimal/ra01tabletconcept.jpeg" alt="tablet/concept">
-                            <img class="showScreenshots" src="/drawings/rescateAnimal/ra06map01concept.jpeg" alt="map01-concept">
-                        </div>
-                        </div>
+            <h2 align="left">Projects and Portfolio</h2>
+            
+            <!-- DIV DE BOTONES-->
+            <div class="main-toggle-buttons">
+                <button id="btn-3d" class="main-btn active" onclick="toggleMainSection('3d')">3D Modeling</button>
+                <button id="btn-vr" class="main-btn" onclick="toggleMainSection('vr')">VR Projects</button>
+                <button id="btn-art" class="main-btn" onclick="toggleMainSection('art')">Concept Art to Assets</button>
+            </div>
+
+            <!-- SECCION MODELADO 3D-->
+
+             <div id="section-3d" class="main-section active">
+                <p class="description">
+                    I specialize in creating detailed 3D environments and assets using Blender. 
+                    From concept to implementation in Unity, I handle modeling, texturing, and optimization 
+                    for game-ready assets. Below you can see my building designs and how they're integrated into VR experiences.
+                </p>
+                <div class="gallery-container">
+                    <div class="horizontal-gallery">
+                        <img src="" alt="3d-model-0">
                     </div>
-                        
-                    <div id="supersimulator" class="project">
-                        <div class="main-box">
-                            <div class="text-box">
-                                <p id="ssInfo" class="text-left">-- The Super Simulator (its real name is way different but its too long) is a VR game I'm working on my own, its a physics based VR experience/sandbox where I'm exploring Unity's VR capabilities and features while developing my own skills on VR development.
-                                It features a 3 storie ARMORY full of different kinds of weapons and gadgets. It has another Escene where you are supposed to spawn all kinds of enemy types to fight with and many obstacles and interesting stuff to play and engage with.</p>
-                            </div>
-                            <div class="image-box">
-                                <img class="showScreenshots" src="/drawings/superSimulator/ss17drawing.jpeg" alt="super-simulator-drawing">
-                                <img class="showScreenshots" src="/drawings/superSimulator/ss12elevatorconcept.jpeg" alt="elevator-concept01">
-                                <img class="showScreenshots" src="/drawings/superSimulator/ss13elevatorconcept.jpeg" alt="elevator-concept01">
-                                <img class="showScreenshots" src="/drawings/superSimulator/ss01elevatorarmory.jpeg" alt="elevator-armory">
-                                <img class="showScreenshots" src="/drawings/superSimulator/ss02hammerholding.jpeg" alt="hammer-armory">
-                                <img class="showScreenshots" src="/drawings/superSimulator/ss07armoryconcept.jpeg" alt="armory-concept">
-                                <img class="showScreenshots" src="/drawings/superSimulator/ss10armoryconcept.jpeg" alt="armory-concept-inside">
-                                <img class="showScreenshots" src="/drawings/superSimulator/ss03armoryinsideview.jpeg" alt="view-armory">
-                                <img class="showScreenshots" src="/drawings/superSimulator/ss08weaponsconcept.jpeg" alt="weapon-concept">
-                                <img class="showScreenshots" src="/drawings/superSimulator/ss04daggerarmory.jpeg" alt="dagger-armory">
-                                <img class="showScreenshots" src="/drawings/superSimulator/ss11kombatarenaconcept.jpeg" alt="kombat-arena-concept">
-                                <img class="showScreenshots" src="/drawings/superSimulator/ss05kombatarenalandscape.jpeg" alt="kombat-arena">
-                                <img class="showScreenshots" src="/drawings/superSimulator/ss14kombatarena.jpeg" alt="kombat-arena-concept">
-                                <img class="showScreenshots" src="/drawings/superSimulator/ss15racetrack.jpeg" alt="kombat-arena-concept">
-                                <img class="showScreenshots" src="/drawings/superSimulator/ss16obstaclecourse.jpeg" alt="kombat-arena-concept">
-                                <img class="showScreenshots" src="/drawings/superSimulator/ss06kombatarenaconcept.jpeg" alt="kombat-arena-armory-view">
-                                <img class="showScreenshots" src="/drawings/superSimulator/ss09jetpackconcept.jpeg" alt="jetpack-concept">                                                      
-                            </div>
-                        </div>
-                            
+                    <div class="gallery-item">
+                        <video controls><source src="" type="video/mp4"></video>
                     </div>
-                        
-                        <div id="modeling" class="project">
-                            <div class="main-box">
-                                <div class="text-box">
-                                <p id="paginaInfo" class="text-left">-- My own personal webpage which I'm ever developing and improving, done with basic JavaScript, HTML and CSS and hosted with --x--. </p>
-                            </div>
-                            <div class="image-box">
-                                <img class="showScreenshots" src="/drawings/paginaWeb/pagina2.jpeg" alt="pagina-web-concept">
-                                <img class="showScreenshots" src="/drawings/paginaWeb/pagina3.jpeg" alt="pagina-web-concept-02">
-                                <img class="showScreenshots" src="/drawings/paginaWeb/pagina1.jpeg" alt="pagina-primer-edición">
-                            </div>
-                            </div>
-                        </div>                        
+
+                    <!-- AGREGAR ITEMS AQUI DESPUES -->
+
+                </div>
+                <P class="description" style="margin-top: 20px;">
+                    <!-- PONER LINK DE GALERIA DE MATERIALES DE GITHUB AQUI -->
+                    Check out my <a href="" target="_blank" style="color: red;">>Material Gallery</a>
+                </P>
+             </div>
+        </div>
+
+        <!-- SECCION DE PROYECTOS VR -->
+
+        <div id="section-vr" class="main-section">
+            <p class="description">
+                I develop immersive VR experiences using Unity with a focus on physics-based gameplay, 
+                realistic interactions, and engaging user experiences. Each project below showcases different 
+                aspects of VR development, from combat mechanics to environmental design.
+            </p>
+
+            <!-- BOTONES A PROYECTOS -->
+            <div class="project-toggle-buttons">
+                <button id="btn-ra" class="project-btn active" onclick="toggleVRProject('rescate')">Rescate Animal</button>
+                <button id="btn-ss" class="project-btn" onclick="toggleVRProject('simulator')">Super Simulator</button>
+                <button id="btn-hands" class="project-btn" onclick="toggleVRProject('hands')">VR Hand Testing Ground</button>
+            </div>
+
+            <!-- RESCATE ANIMAL -->
+            <div class="gallery-container">
+                <div class="horizontal-gallery" id="vr-rescate">
+                    <div class="gallery-item">
+                        <img src="" alt="rescate-0">
+                    </div>
+
+                    <!-- AGGREGAR ITEMS AQUI -->
+
+                </div>
+
+                <!-- SUPERSIMULATOR -->
+                <div class="horizontal-gallery" id="vr-simulator" style="display: none;">
+                    <div class="gallery-item">
+                        <img src="" alt="simulator-0">
+                    </div>
+
+                    <!-- AGGREGAR ITEMS AQUI -->
+
+                </div>
+
+                <!-- HANDS -->
+                <div class="horizontal-gallery" id="vr-hands" style="display: none;">
+                    <div class="gallery-item">
+                        <img src="" alt="hands-0">
+                    </div>
+
+                    <!-- AGGREGAR ITEMS AQUI -->
+
                 </div>
             </div>
         </div>
+
+        <!-- SECCION DE CONCEPT ART -->
+        <div id="section-art" class="main-section">
+            <p class="description">
+                From concept art to final game-ready assets. This section showcases the creative process 
+                of designing characters, environments, and UI elements, along with their implementation 
+                in the VR projects below.
+            </p>
+
+            <!-- BOTONES A PROYECTOS -->
+            <div class="project-toggle-buttons">
+                <button id="btn-ca-ra" class="project-btn active" onclick="toggleConceptProject('rescate')">Rescate Animal</button>
+                <button id="btn-ca-ss" class="project-btn" onclick="toggleConceptProject('simulator')">Super Simulador</button>
+                <button id="btn-ca-vr-hands" class="project-btn" onclick="toggleConceptProject('hands')">VR Hands Testing Ground</button>
+            </div>
+            <div class="gallery-container">
+                <div class="horizontal-gallery" id="concept-rescate">
+                    <div class="gallery-item">
+                        <img src="" alt="concept-rescate-0">
+                    </div>
+
+                    <!-- AGGREGAR ITEMS AQUI -->
+
+                </div>
+                <div class="horizontal-gallery" id="concept-simulator" style="display: none;">
+                    <div class="gallery-item">
+                        <img src="" alt="concept-simulator-0">
+                    </div>
+
+                    <!-- AGGREGAR ITEMS AQUI -->
+
+                </div>
+                <div class="horizontal-gallery" id="concept-hands" style="display: none;">
+                    <div class="gallery-item">
+                        <img src="" alt="concept-hands-0">
+                    </div>
+
+                    <!-- AGGREGAR ITEMS AQUI -->
+
+                </div>
+            </div>
+        </div>
+        
     </section>
     
-    <section id="combat">
-        <h2>Combat</h2>
-        <p>Coming Soon...</p>
-    </section>
     <section id="contact">
         <h2>Contact Me</h2>
         <p>Coming soon...</p>
