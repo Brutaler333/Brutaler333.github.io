@@ -84,6 +84,13 @@ h3 {
     padding: 20px;
     margin: auto;
 }
+#akylade-cert{
+    display: block;
+    width: 300px;
+    padding: 20px;
+    margin: auto;
+}
+
 
 
 /* EXPERIENCE PAGE*/
@@ -359,5 +366,18 @@ footer h2 {
 }
 
 .contact-socials a:hover {
+    transform: scale(1.1);
+}
+.contact-socials-0{
+    display: flex center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.contact-socials-0 a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.contact-socials-0 a:hover {
     transform: scale(1.1);
 }

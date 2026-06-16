@@ -22,9 +22,7 @@
         <div>
             <h1 id="owner-name" class="text-center">Juan Diego Pedraza Campos</h1>
             <h1 class="text-center">"Brutaler"</h1>
-            <img id="profile-photo" src="/drawings/skill-and-work/pfp.png" alt="profile-photo">
-
-            <div class="social-media-logos" align="center">
+            <div class="contact-socials-0" align="center">
                 <a href="https://www.youtube.com/@brutaler7278" target="_blank">
                     <image class="social-media" src="/drawings/youTubeLogoDraw.png" alt="youtube-link"></image>
                 </a>
@@ -38,53 +36,32 @@
                     <image class="social-media" src="/drawings/linkedInLogoDraw.png" alt="linkedIn-link"></image>
                 </a>
             </div>
+            <img id="profile-photo" src="/drawings/skill-and-work/pfp.png" alt="profile-photo">
         </div>
     </header>
     
     <p class="description">Welcome to my first webpage done with basic JS, HTML and CSS. I'm Juan, a passionate Systems and computing engineer, fighter and game dev. I love hanging out with my friends and spending time on VR.</p>
 
+    <img id="akylade-cert" src="drawings/skill-and-work/akyladeACXRD.png" alt="akylade-certification">
     <section id="projects" class="project-review">
         <div>
             <h2 align="left">Projects and Portfolio</h2>
             
             <!-- DIV DE BOTONES-->
             <div class="main-toggle-buttons">
-                <button id="btn-3d" class="main-btn active" onclick="toggleMainSection('3d')">3D Modeling</button>
-                <button id="btn-vr" class="main-btn" onclick="toggleMainSection('vr')">VR Projects</button>
+                <button id="btn-vr" class="main-btn active" onclick="toggleMainSection('vr')">VR Projects</button>
+                <button id="btn-3d" class="main-btn" onclick="toggleMainSection('3d')">3D Modeling</button>
                 <button id="btn-art" class="main-btn" onclick="toggleMainSection('art')">Concept Art to Assets</button>
             </div>
 
-            <!-- SECCION MODELADO 3D-->
-
-             <div id="section-3d" class="main-section active">
-                <p class="description">
-                    I specialize in creating detailed 3D environments and assets using Blender. 
-                    From concept to implementation in Unity, I handle modeling, texturing, and optimization 
-                    for game-ready assets. Below you can see my building designs and how they're integrated into VR experiences.
-                </p>
-                <div class="gallery-container">
-                    <div class="horizontal-gallery">
-                        <img src="" alt="3d-model-0">
-                    </div>
-                    <div class="gallery-item">
-                        <video controls><source src="" type="video/mp4"></video>
-                    </div>
-
-                    <!-- AGREGAR ITEMS AQUI DESPUES -->
-
-                </div>
-                <P class="description" style="margin-top: 20px;">
-                    <!-- PONER LINK DE GALERIA DE MATERIALES DE GITHUB AQUI -->
-                    Check out my <a href="" target="_blank" style="color: red;">>Material Gallery</a>
-                </P>
-             </div>
+            
         </div>
 
         <!-- SECCION DE PROYECTOS VR -->
 
-        <div id="section-vr" class="main-section">
+        <div id="section-vr" class="main-section active">
             <p class="description">
-                I develop immersive VR experiences using Unity with a focus on physics-based gameplay, 
+                We develop immersive VR experiences using Unity with a focus on physics-based gameplay, 
                 realistic interactions, and engaging user experiences. Each project below showcases different 
                 aspects of VR development, from combat mechanics to environmental design.
             </p>
@@ -126,6 +103,32 @@
                     <!-- AGGREGAR ITEMS AQUI -->
 
                 </div>
+            </div>
+        </div>
+
+        <!-- SECCION MODELADO 3D-->
+
+        <div id="section-3d" class="main-section">
+            <p class="description">
+                I specialize in creating detailed 3D environments and assets using Blender. 
+                From concept to implementation in Unity, I handle modeling, texturing, and optimization 
+                for game-ready assets. Below you can see my building designs and how they're integrated into VR experiences.
+            </p>
+            <div class="gallery-container">
+                <div class="horizontal-gallery">
+                    <img src="" alt="3d-model-0">
+                </div>
+                <div class="gallery-item">
+                    <video controls><source src="" type="video/mp4"></video>
+                </div>
+
+            <!-- AGREGAR ITEMS AQUI DESPUES -->
+
+            </div>
+                <P class="description" style="margin-top: 20px;">
+                    <!-- PONER LINK DE GALERIA DE MATERIALES DE GITHUB AQUI -->
+                    Check out my <a href="" target="_blank" style="color: red;">>Material Gallery</a>
+                </P>
             </div>
         </div>
 
