@@ -26,6 +26,8 @@ function toggleMainSection(section) {
 
 /* VR PROJECTS TOGGLE */
 function toggleVRProject(project) {
+
+    pauseAllVideos();
     // Hide all VR galleries
     document.getElementById('vr-rescate').style.display = 'none';
     document.getElementById('vr-simulator').style.display = 'none';
@@ -51,6 +53,8 @@ function toggleVRProject(project) {
 
 /* CONCEPT ART PROJECTS TOGGLE */
 function toggleConceptProject(project) {
+
+    pauseAllVideos();
     // Hide all concept galleries
     document.getElementById('concept-rescate').style.display = 'none';
     document.getElementById('concept-simulator').style.display = 'none';
@@ -72,4 +76,9 @@ function toggleConceptProject(project) {
         document.getElementById('concept-hands').style.display = 'flex';
         document.getElementById('btn-ca-vr-hands').classList.add('active');
     }
+}
+
+function pauseAllVideos() {
+    const videos = document.querySelectorAll('video');
+    videos.forEach(video => video.pause());
 }
