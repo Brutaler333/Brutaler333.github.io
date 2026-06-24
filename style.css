@@ -381,3 +381,74 @@ footer h2 {
 .contact-socials-0 a:hover {
     transform: scale(1.1);
 }
+
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    body {
+        width: 95%;
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    nav a {
+        font-size: 0.9em;
+        margin: 3px;
+        padding: 3px;
+    }
+    
+    .main-btn {
+        width: 100px;
+        height: 45px;
+        font-size: 12px;
+    }
+    
+    .project-btn {
+        width: 100px;
+        height: 35px;
+        font-size: 11px;
+    }
+    
+    .gallery-item {
+        min-width: 250px;
+        height: 200px;
+    }
+    
+    .social-media {
+        width: 70px;
+    }
+    
+    footer {
+        margin-top: 30px;
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        width: 95%;
+        font-size: 13px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    .main-btn {
+        width: 90px;
+        height: 40px;
+        font-size: 11px;
+    }
+    
+    .gallery-item {
+        min-width: 200px;
+        height: 150px;
+    }
+}
