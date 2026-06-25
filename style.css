@@ -1,39 +1,40 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
-nav{
+
+nav {
     display: inline-block;
     width: 100%;
     text-align: right;
 }
-nav ul{
+
+nav ul {
     list-style-type: none;
 }
-nav li{
+
+nav li {
     display: inline-block;
 }
-nav a{
+
+nav a {
     text-decoration: none;
     font-size: 1em;
-    border-bottom: 1px ;
     color: white;
-    /*font-family: "Manufacturing Consent";*/
     padding: 5px;
     margin: 5px;
 }
-nav a:hover{
+
+nav a:hover {
     color: red;
 }
 
-
-/*BODY*/
-body{
+body {
     background-color: rgb(0, 0, 0);
     color: rgb(217, 217, 217);
     margin: auto;
@@ -41,62 +42,62 @@ body{
     max-width: 95%;
     line-height: 1.6;
     font-size: 15px;
-    padding: auto;
 }
-header{
+
+header {
     align-self: auto;
-    /*background-image: url(/drawings/skill-and-work/pfp.jpeg);*/
 }
-h1{
+
+h1 {
     font-size: 40px;
-    /*font-family: "Manufacturing Consent";*/
     padding: auto;
     margin: auto;
 }
-h2{
+
+h2 {
     font-size: 25px;
-    /*font-family: "Manufacturing Consent";*/
     padding: auto;
     margin: auto;
 }
+
 h3 {
     margin-top: 24px;
     margin-bottom: 15px;
     font-size: 24px;
 }
 
-.description{
+.description {
     font-size: 20px;
     margin-top: 5px;
     margin-bottom: 20px;
 }
-.social-media{
+
+.social-media {
     width: 100px;
     padding: auto;
     margin: auto;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
-#profile-photo{
+
+#profile-photo {
     display: block;
     width: 300px;
     padding: 20px;
     margin: auto;
 }
-#akylade-cert{
+
+#akylade-cert {
     display: block;
     width: 300px;
     padding: 20px;
     margin: auto;
 }
-
-
-
-/* EXPERIENCE PAGE*/
 
 .accordion-items {
-    max-height:max-content;
+    max-height: max-content;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -106,8 +107,7 @@ h3 {
 .accordion-item {
     background-color: rgb(15, 15, 15);
     border: 1px solid rgb(40, 40, 40);
-    border-radius:0%;
-    
+    border-radius: 0%;
 }
 
 .accordion-header {
@@ -129,7 +129,6 @@ h3 {
 
 .accordion-header p:first-child {
     font-size: 16px;
-    /*font-weight: bold;*/
     color: white;
 }
 
@@ -161,15 +160,12 @@ h3 {
     padding: 15px 20px;
 }
 
-.accordion-body p{
+.accordion-body p {
     line-height: 1.6;
     color: rgb(200, 200, 200);
     margin: 0;
 }
 
-
-/* THIS IS FOR THE NEW SECTIONS, I NEED TO STUDY EVERYTHING IT DOES BECAUSE I'M PASTING IT FROM CLAUDE*/
-/* MAIN TOGGLE BUTTONS */
 .main-toggle-buttons {
     display: flex;
     gap: 15px;
@@ -185,7 +181,7 @@ h3 {
     border: 2px solid rgb(100, 100, 100);
     background-color: rgb(20, 20, 20);
     color: rgb(217, 217, 217);
-    border-radius:0px;
+    border-radius: 0px;
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex;
@@ -205,7 +201,6 @@ h3 {
     border-color: red;
 }
 
-/* MAIN SECTIONS */
 .main-section {
     display: none;
     animation: fadeIn 0.3s ease;
@@ -220,7 +215,6 @@ h3 {
     to { opacity: 1; }
 }
 
-/* PROJECT TOGGLE BUTTONS */
 .project-toggle-buttons {
     display: flex;
     gap: 10px;
@@ -252,7 +246,6 @@ h3 {
     border-color: red;
 }
 
-/* GALLERY CONTAINER */
 .gallery-container {
     border: none;
     padding: 0;
@@ -260,7 +253,6 @@ h3 {
     background-color: transparent;
 }
 
-/* HORIZONTAL SCROLLABLE GALLERY */
 .horizontal-gallery {
     display: flex;
     gap: 15px;
@@ -287,7 +279,6 @@ h3 {
     background: rgb(200, 50, 50);
 }
 
-/* GALLERY ITEMS */
 .gallery-item {
     flex-shrink: 0;
     min-width: 300px;
@@ -311,7 +302,6 @@ h3 {
     box-shadow: none;
 }
 
-/* FOOTER */
 footer {
     border-top: 2px solid rgb(50, 50, 50);
     margin-top: 60px;
@@ -344,9 +334,6 @@ footer h2 {
     text-decoration: none;
     font-size: 16px;
     transition: all 0.3s ease;
-}
-
-.contact-item a {
     color: red;
 }
 
@@ -368,22 +355,7 @@ footer h2 {
 .contact-socials a:hover {
     transform: scale(1.1);
 }
-.contact-socials-0{
-    display: flex center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-.contact-socials-0 a {
-    display: inline-block;
-    transition: transform 0.3s ease;
-}
 
-.contact-socials-0 a:hover {
-    transform: scale(1.1);
-}
-
-
-/* Mobile responsive */
 @media (max-width: 768px) {
     body {
         width: 95%;
